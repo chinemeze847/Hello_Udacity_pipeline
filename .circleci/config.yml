@@ -8,7 +8,7 @@ jobs:
     steps:
       - run: mkdir -p workspace
       - run: echo "Hello, world!" > ~/output.txt
-    - persist_to_workspace:
+      - persist_to_workspace:
           root: ~/
           paths:
             - output.txt
